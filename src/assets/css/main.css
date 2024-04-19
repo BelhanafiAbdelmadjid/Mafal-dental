@@ -16,6 +16,8 @@
 }
 
 #app{
+    overflow: hidden;
+
     scroll-behavior: smooth;
 
     font-family: Avenir, Helvetica, Arial, sans-serif;

@@ -1,8 +1,8 @@
 <template>
     <div id="contact" class="holder">
-        <h1>À propos de nous</h1>
-        <div class="content">
-            <infoComp>
+        <h1 class="titre-info" >À propos de nous</h1>
+        <div class="content titre-info">
+            <infoComp class="" >
                 <template #Icon>
                     <svg width="42" height="38" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -17,7 +17,7 @@
                     <p class="information-value" >mafal-cilnic@gmail.com</p>
                 </template>
             </infoComp>
-            <infoComp>
+            <infoComp class="" >
                 <template #Icon>
                     <svg width="42" height="42" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_16_16)">
@@ -42,11 +42,25 @@
         </div>
     </div>
 </template>
+<script setup>
+import ScrollReveal from 'scrollreveal';
+</script>
+
 <script>
 import infoComp from "@/components/informations/info-comp.vue"
 export default{
     components : {
         infoComp
+    },
+    mounted(){
+        const sr = ScrollReveal();
+        sr.reveal('.titre-info', {
+        duration: 1000,
+        origin: 'bottom',
+        distance: '150px',
+        easing: 'ease-in-out',
+        });
+        
     }
 }
 </script>
@@ -112,8 +126,7 @@ box-shadow: 0px 10px 121px 6px rgba(62,66,66,0.03);
     width: 100%;
     height: 30vh;
 
-    background-color: white;
-    background-color: red;
+    background-color: transparent;
 }
 
 @media only screen and (max-width: 1000px) {

@@ -1,9 +1,13 @@
 <template>
-    <desk v-if="widthLarge" ></desk>
-    <mobile v-else ></mobile>
+    <desk id="work" class="work-left" v-if="widthLarge" ></desk>
+    <mobile id="work" class="work-left" v-else ></mobile>
 
 </template>
+<script setup>
+import ScrollReveal from 'scrollreveal';
+</script>
 <script>
+
 import firstWork from "../../assets/images/first_work.jpg"
 import secondWork from "../../assets/images/second_work.jpg"
 import thirdWork from "../../assets/images/third_work.jpg"
@@ -28,6 +32,13 @@ export default{
       window.addEventListener('resize', ()=>{
             this.widthLarge = window.innerWidth >= 850 ? true : false;
             
+        });
+        const sr = ScrollReveal();
+        sr.reveal('.work-left', {
+        duration: 1000,
+        origin: 'bottom',
+        distance: '150px',
+        easing: 'ease-in-out',
         });
     }
 

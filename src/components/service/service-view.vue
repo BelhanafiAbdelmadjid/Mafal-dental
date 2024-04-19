@@ -1,8 +1,8 @@
 <template>  
     <div id="services" class="service-holder">
-        <h1>Nos services</h1>
+        <h1 class="bottom-titel" >Nos services</h1>
         <div class="content">
-            <service>
+            <service class="imp  bottom-scroll " >
                 <template #icon >
                     <img src="../../assets/images/dental-implant.png" alt="">
                 </template>
@@ -10,7 +10,8 @@
                     Implants
                 </template>
             </service>
-            <service>
+
+            <service class="pair bottom-scroll-quick" >
                 <template #icon >
                     <!-- <svg width="36" height="36" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M5 0C2 0 0 3 0 6C0 8.11 1 11 2 12C3 13 4 20 6 20C10.54 20 8 13 10 13C12 13 9.46 20 14 20C16 20 17 13 18 12C19 11 20 8.11 20 6C20 3 18 0 15 0C12 0 12 1 10 1C8 1 8 0 5 0Z" fill="#222222"/>
@@ -22,7 +23,7 @@
                     Soins esthétique
                 </template>
             </service>
-            <service>
+            <service class="imp bottom-scroll" >
                 <template #icon >
                     <img src="../../assets/images/extraction.png" alt="">
                 </template>
@@ -30,7 +31,7 @@
                     Extractions
                 </template>
             </service>
-            <service>
+            <service class="pair bottom-scroll"  >
                 <template #icon >
                     <img src="../../assets/images/dental-care.png" alt="">
                 </template>
@@ -38,15 +39,15 @@
                     Céramique
                 </template>
             </service>
-            <service>
+            <service class="imp bottom-scroll-quick" >
                 <template #icon >
                     <img src="../../assets/images/dental-veneer.png" alt="">
                 </template>
                 <template #TypeService>
                     Facettes
                 </template>
-            </service>
-            <service>
+            </service  >
+            <service class="pair bottom-scroll" >
                 <template #icon >
                     <img src="../../assets/images/x-ray.png" alt="">
                 </template>
@@ -59,7 +60,11 @@
 
     </div>
 </template>
+<script setup>
+import ScrollReveal from 'scrollreveal';
+</script>
 <script>
+
 import implant from "../../assets/images/implant.png"
 import service from "./service-comp.vue"
 export default{
@@ -70,6 +75,46 @@ export default{
         return{
             implant : implant
         }
+    },
+    mounted(){
+       if(window.innerWidth < 1000){
+        const sr = ScrollReveal();
+        sr.reveal('.imp', {
+        duration: 1000,
+        origin: 'left',
+        distance: '150px',
+        easing: 'ease-in-out',
+        });
+        const sr3 = ScrollReveal();
+        sr3.reveal('.bottom-titel', {
+        duration: 1000,
+        origin: 'bottom',
+        distance: '150px',
+        easing: 'ease-in-out',
+        });
+        const sr2 = ScrollReveal();
+        sr2.reveal('.pair', {
+        duration: 1000,
+        origin: 'right',
+        distance: '150px',
+        easing: 'ease-in-out',
+        });
+       }else{
+        const sr2 = ScrollReveal();
+        sr2.reveal('.bottom-scroll', {
+        duration: 1000,
+        origin: 'bottom',
+        distance: '150px',
+        easing: 'ease-in-out',
+        });
+        const sr = ScrollReveal();
+        sr.reveal('.bottom-scroll-quick', {
+        duration: 750,
+        origin: 'bottom',
+        distance: '150px',
+        easing: 'ease-in-out',
+        });
+       }
     }
 }
 </script>

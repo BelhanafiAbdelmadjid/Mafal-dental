@@ -1,7 +1,7 @@
 <template>
     <div class="work-holder" >
-        <h1 style="color: var(--gray-text-color);" >Notre travail</h1>
-        <div class="content">
+        <h1 class="titre-info"  style="color: var(--gray-text-color);" >Notre travail</h1>
+        <div class="content content-left">
             <swiper autoplay :delay="1000" :slides-per-view="1" :space-between="10" @swiper="onSwiper" @slideChange="onSlideChange">
                 <swiper-slide>
                     <div class="slide">
@@ -57,6 +57,7 @@
         </div>
     </div>
 </template>
+
 <script>
 import firstWork from "../../assets/images/first_work.jpg"
 import secondWork from "../../assets/images/second_work.jpg"
@@ -100,10 +101,11 @@ export default{
         return {
             onSwiper,swiper,next
         }
-  },
+  }
   
 }
 </script>
+
 <style scoped >
 .work-holder{
     display: flex;

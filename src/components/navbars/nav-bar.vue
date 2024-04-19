@@ -4,6 +4,7 @@
             <a href="#contact">Contact</a>
             <a href="#localisation">Localisation</a>
             <a href="#services">Services</a>
+            <a href="#work">Notre travail</a>
         </template>
     </largeNav>
     <ThinNav v-else  :hideNavScroll="hideNavScroll" >
@@ -11,6 +12,8 @@
             <a href="#contact">Contact</a>
             <a href="#localisation">Localisation</a>
             <a href="#services">Services</a>
+            <a href="#work">Notre travail</a>
+
         </template>
     </ThinNav>
 </template>

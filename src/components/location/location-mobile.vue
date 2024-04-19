@@ -37,12 +37,31 @@
 
     </div>
 </template>
+<script setup>
+import ScrollReveal from 'scrollreveal';
+</script>
 <script>
 export default{
     methods : {
         openMaps(){
             window.open('https://www.google.com/maps?q=P8RV+JM4+Mafal+Dental+Clinic+Dr.Oumahammed,+Réghaïa&ftid=0x128e43461208d9cd:0x8591642501344794&hl=fr-DZ&gl=dz&entry=gps&g_ep=CAISBjYuNTguMRgAINeCA0ICRFo%3D&g_st=iw', '_blank')
         }
+    },
+    mounted(){
+        const sr = ScrollReveal();
+        sr.reveal('.section', {
+        duration: 1000,
+        origin: 'right',
+        distance: '150px',
+        easing: 'ease-in-out',
+        });
+        const sr2 = ScrollReveal();
+        sr2.reveal('.map', {
+        duration: 1000,
+        origin: 'left',
+        distance: '150px',
+        easing: 'ease-in-out',
+        });
     }
 }
 </script>

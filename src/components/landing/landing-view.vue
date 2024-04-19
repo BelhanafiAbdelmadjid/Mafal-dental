@@ -1,6 +1,6 @@
 <template>
     <div class="landing-page">
-        <div class="content">
+        <div class="content landing-content ">
             <profComp></profComp>
             <div>
                 <h1>CLINIQUE RENOMMÉE <br> SOURIRE ÉTOILÉ </h1>
@@ -14,11 +14,25 @@
         </div>
     </div>
 </template>
+<script setup>
+import ScrollReveal from 'scrollreveal';
+</script>
+
 <script>
 import profComp from "./prof-comp.vue"
+
 export default {
     components: {
         profComp
+    },
+    mounted(){
+        const sr = ScrollReveal();
+        sr.reveal('.landing-content', {
+        duration: 1000,
+        origin: 'left',
+        distance: '150px',
+        easing: 'ease-in-out',
+        });
     }
 }
 </script>
@@ -30,6 +44,7 @@ export default {
 
     height: 100Vh;
     width: 100%;
+    min-height: 480px;
 
     background-image: url('../../assets/images/landing-page-background.jpg');
     background-size: cover;
