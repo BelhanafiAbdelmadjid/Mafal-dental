@@ -89,8 +89,7 @@ export default{
     background-repeat: no-repeat;
 }
 .service-holder{
-    padding-top: 20vh;
-    padding-bottom: 20vh;
+    width: 100%;
     background-color: white;
 
     display: flex;

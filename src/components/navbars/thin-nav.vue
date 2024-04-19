@@ -60,6 +60,8 @@ nav {
     -webkit-box-shadow:0px 81px 144px 6px rgba(62,66,66,0.09);
     -moz-box-shadow: 0px 81px 144px 6px rgba(62,66,66,0.09);
     box-shadow: 0px 81px 144px 6px rgba(62,66,66,0.09);
+
+    z-index: 99;
 }
 
 nav .logo-holder img {

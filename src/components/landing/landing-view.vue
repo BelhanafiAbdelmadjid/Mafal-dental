@@ -71,6 +71,10 @@ export default {
     font-family: 200;
     width: 50%;
     font-size: 14px;
+
+
+    color: var(--break-color);
+    font-weight: 500;
 }
 
 .landing-page .profession {
@@ -93,6 +97,7 @@ export default {
 @media only screen and (max-width: 600px) {
     .landing-page .description {
     width: 100%;
+
     }
     .landing-page h1 {
         font-size: 30px;

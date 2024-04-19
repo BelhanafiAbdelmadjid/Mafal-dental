@@ -34,6 +34,7 @@ export default{
 </script>
 <style scoped>
 footer .Our-services{
+
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -55,6 +56,8 @@ footer .Our-services p{
     font-size: 20px;
 }
 footer{
+
+
     position: relative;
     height: 40vh;
     width: 100%;

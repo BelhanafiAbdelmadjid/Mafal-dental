@@ -22,8 +22,23 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-    background-color: #e6f2fe;
+    background-color: white;
 
     position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+#app > div{
+    margin-bottom: 20vh;
+}
+@media only screen and (max-width: 650px) {
+    #app > div{
+        margin-bottom: 10vh;
+    }
 }
 

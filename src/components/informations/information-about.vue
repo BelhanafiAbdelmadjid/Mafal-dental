@@ -87,8 +87,6 @@ export default{
 
     gap: 30px;
 
-    padding-top: 20vh;
-    padding-bottom: 20vh;
     padding-left: 10vw;
     padding-right: 10vw;
     box-sizing: border-box;

@@ -2,8 +2,9 @@
   <navbar></navbar>
   <landing></landing>
   <informations></informations>
-  <location></location>
   <service></service>
+  <location></location>
+  <work></work>
   <footerV></footerV>
 </template>
 <style src='./assets/css/main.css'></style>
@@ -14,6 +15,7 @@ import informations from "@/components/informations/information-about.vue"
 import location from "@/components/location/location-main.vue"
 import service from "@/components/service/service-view.vue"
 import footerV from "@/components/footer/footer-view.vue"
+import work from "@/components/work/work-view.vue"
 export default {
   name: 'App',
   components: {
@@ -22,7 +24,8 @@ export default {
     informations,
     location,
     service,
-    footerV
+    footerV,
+    work
   }
 }
 </script>
