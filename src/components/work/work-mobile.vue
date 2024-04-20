@@ -127,7 +127,7 @@ export default{
     gap : 40px;
   }
 .content{
-    width: 450px;
+    width: 350px;
     height: auto;
     border-radius: 10px; 
     overflow: hidden;
