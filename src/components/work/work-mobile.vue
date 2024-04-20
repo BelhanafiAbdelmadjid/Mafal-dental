@@ -124,10 +124,10 @@ export default{
     justify-content: center;
     align-items: center;
 
-    gap : 50px;
+    gap : 40px;
   }
 .content{
-    width: 350px;
+    width: 450px;
     height: auto;
     border-radius: 10px; 
     overflow: hidden;

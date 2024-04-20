@@ -16,12 +16,10 @@
             <div style="text-align: left;width: 50%;" >
                 <h3>Contactez-nous</h3>
                 <p>
-                   
-
                     <span  >mafal-cilnic@gmail.com</span>
                 </p>
                 <p>0558602778</p>
-                <p>Instagram</p>
+                <a href="https://www.instagram.com/mafal_dentalclinic/" target="_blank" >Instagram</a>
             </div>
         </div>
     </footer>
@@ -130,6 +128,9 @@ footer .contact-footer{
     padding: 20px;
     
     box-sizing: border-box;
+}
+footer .contact-footer a{
+    color: black;
 }
 @media only screen and (max-width: 1000px) {
     footer{
