@@ -1,7 +1,8 @@
 <template>  
     <div id="services" class="service-holder">
-        <h1 class="bottom-titel" >Nos services</h1>
         <div class="content">
+            <h1 class="bottom-titel" >Nos services</h1>
+
             <service class="imp  bottom-scroll " >
                 <template #icon >
                     <img src="../../assets/images/dental-implant.png" alt="">
@@ -77,6 +78,13 @@ export default{
         }
     },
     mounted(){
+        const sr3 = ScrollReveal();
+        sr3.reveal('.bottom-titel', {
+        duration: 1000,
+        origin: 'top',
+        distance: '150px',
+        easing: 'ease-in-out',
+        });
        if(window.innerWidth < 1000){
         const sr = ScrollReveal();
         sr.reveal('.imp', {
@@ -85,13 +93,7 @@ export default{
         distance: '150px',
         easing: 'ease-in-out',
         });
-        const sr3 = ScrollReveal();
-        sr3.reveal('.bottom-titel', {
-        duration: 1000,
-        origin: 'bottom',
-        distance: '150px',
-        easing: 'ease-in-out',
-        });
+        
         const sr2 = ScrollReveal();
         sr2.reveal('.pair', {
         duration: 1000,
@@ -134,6 +136,9 @@ export default{
     background-repeat: no-repeat;
 }
 .service-holder{
+
+    overflow: hidden;
+
     width: 100%;
     background-color: white;
 
@@ -144,6 +149,7 @@ export default{
 
     gap: 50px;
 }
+
 .service-holder .content{
     width: 100%;
     height: auto;
@@ -162,13 +168,21 @@ export default{
 box-shadow: 0px 0px 77px 5px rgba(62,66,66,0.27);
 }
 .service-holder h1{
-    color: var(--gray-text-color);
+    color: white;
     font-size: 24px;
+    grid-column: 1/4;
+
+    text-align: center
 }
 @media only screen and (max-width: 1000px) {
     .service-holder .content{
         padding: 50px ;
         grid-template-columns: 1fr;
+
+        place-items: center;
+    }
+    .service-holder h1{
+        grid-column: 1/2;
     }
 
 }

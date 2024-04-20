@@ -77,6 +77,7 @@ export default {
 
     gap: 10px;
 
+
 }
 
 .landing-page .description {
@@ -85,11 +86,12 @@ export default {
 
     font-family: 200;
     width: 50%;
-    font-size: 14px;
+    font-size: 30px;
 
 
-    color: var(--break-color);
+    color: white;
     font-weight: 500;
+    width: 100%;
 }
 
 .landing-page .profession {
@@ -111,11 +113,14 @@ export default {
 
 @media only screen and (max-width: 600px) {
     .landing-page .description {
-    width: 100%;
+        width: 100%;
+        font-size: 20px;
+        font-weight: 900;
+
 
     }
     .landing-page h1 {
-        font-size: 30px;
+        font-size: 32px;
     }
     .landing-page .content {
         display: flex;
@@ -123,9 +128,47 @@ export default {
         align-items: flex-start;
         justify-content: space-evenly;
 
-        height: 40%;
+        height: auto;
+
         gap: 10px;
 
     }
+    .landing-page {
+        color: white;
+
+        padding-top: var(--navbar-height);
+
+        height: calc(100Vh - var(--navbar-height));
+        width: 100%;
+        min-height: 480px;
+
+        background-image: url('../../assets/images/landing-page-background.jpg');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-color: #f0f0f0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: 0px 16px 0px 16px;
+        box-sizing: border-box;
+
+    }
+}
+@media only screen and (max-width: 600px) {
+    .landing-page .description {
+        width: 100%;
+        font-size: 20px;
+        font-weight: 900;
+
+
+    }
+    .landing-page h1 {
+        font-size: 32px;
+    }
+
+
 }
 </style>

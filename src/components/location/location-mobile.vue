@@ -67,6 +67,8 @@ export default{
 </script>
 <style scoped>
 .holder-location{
+    overflow: hidden;
+
     flex-direction: column;
     align-items: center;
     justify-content: center;

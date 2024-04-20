@@ -14,9 +14,10 @@
 
     scroll-behavior: smooth;
 }
-
-#app{
+/* .holders{
     overflow: hidden;
+} */
+#app{
 
     scroll-behavior: smooth;
 

@@ -68,6 +68,7 @@ export default{
 </script>
 <style scoped>
 .holder-location{
+    overflow: hidden;
 
     width: 100%;
     height: 70vh;
