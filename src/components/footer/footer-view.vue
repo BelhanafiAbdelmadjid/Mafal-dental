@@ -5,21 +5,26 @@
             <p>Your smile our mission.</p>
         </div>
         <div class="Our-services" >
-            <p>Navigation</p>
+            <p class="underlined" >Navigation</p>
             <ul>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="#localisation">Localisation</a></li>
                 <li><a href="#services">Services</a></li>
+                <li><a href="#services">Notre travail</a></li>
             </ul>
         </div>
         <div class="contact-footer">
-            <div style="text-align: left;width: 50%;" >
-                <h3>Contactez-nous</h3>
+            <h3>Contactez-nous</h3>
+            <div class="links-holder" >
                 <p>
-                    <span  >mafal-cilnic@gmail.com</span>
+                    <a href="mailto:mafal-dental@gmail.com" class="information-value" >mafal-cilnic@gmail.com</a>
                 </p>
-                <p>0558602778</p>
-                <a href="https://www.instagram.com/mafal_dentalclinic/" target="_blank" >Instagram</a>
+                <p>
+                    <a href="tel:0585602778" style="text-decoration: none;color:black"  class="information-value" >0558602778</a>
+                </p>
+                <p>
+                    <a href="https://www.instagram.com/mafal_dentalclinic/" target="_blank" >Instagram</a>
+                </p>
             </div>
         </div>
     </footer>
@@ -31,6 +36,19 @@ export default{
 }
 </script>
 <style scoped>
+footer .underlined{
+    position: relative;
+}
+footer .underlined::after{
+    content: "";
+    width: 40%;
+    bottom: -2px;
+    left: 0;
+    height: 2px;
+    position: absolute;
+    background-color: var(--details-color);
+}
+
 footer .Our-services{
 
     display: flex;
@@ -58,6 +76,7 @@ footer{
 
     position: relative;
     height: 40vh;
+    min-height: 200px;
     width: 100%;
 
     background-image: url("../../assets/images/footer.jpg");
@@ -86,7 +105,7 @@ footer::before {
   z-index: -0;
   background-color: var(--primary-color); /* Replace with your primary color */
   filter: brightness(110%);
-  opacity: 0.85; /* Adjust the filter effect as needed */
+  opacity: 0.65; /* Adjust the filter effect as needed */
 }
 
 footer .slogan{
@@ -108,8 +127,9 @@ footer a{
 }
 footer .contact-footer{
     background-color: var(--secondary-color);
+
     height: 80%;
-    width: 80%;
+    width: auto;
 
     place-self: flex-end;
 
@@ -125,14 +145,33 @@ footer .contact-footer{
     justify-content: flex-start;
     align-items: center;
 
+    gap: 16px;
+
     padding: 20px;
     
     box-sizing: border-box;
 }
+footer .contact-footer h3{
+    text-align: left;
+    width: 100%;
+    white-space: nowrap;
+}
+footer .contact-footer p{
+    white-space: nowrap;
+}
 footer .contact-footer a{
     color: black;
 }
-@media only screen and (max-width: 1000px) {
+footer .links-holder {
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 5px;
+}
+@media only screen and (max-width: 800px) {
     footer{
         background-image: url("../../assets/images/footer.jpg");
         background-size: cover;
@@ -165,10 +204,11 @@ footer .contact-footer a{
     }
     footer .contact-footer{
         background-color: var(--secondary-color);
-        height: 80%;
-        width: 100%;
 
-        place-self: none;
+        height: 80%;
+        width: auto;
+
+        place-self: center;
 
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;

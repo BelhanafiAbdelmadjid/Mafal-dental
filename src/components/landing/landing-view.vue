@@ -42,7 +42,7 @@ export default {
 
     padding-top: var(--navbar-height);
 
-    height: 100Vh;
+    height: calc(100Vh - var(--navbar-height));
     width: 100%;
     min-height: 480px;
 

@@ -107,7 +107,7 @@ export default{
     width: 100%;
     bottom: 0;
     left:0;
-    z-index: 999;
+    z-index: 99;
 
     display: flex;
     justify-content: center;
@@ -123,12 +123,14 @@ export default{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 300px;
 
     gap : 40px;
   }
 .content{
     width: 350px;
     height: auto;
+    min-height: 220px;
     border-radius: 10px; 
     overflow: hidden;
 
@@ -143,6 +145,7 @@ export default{
 .slider-image{
   width: 100%;
   height: 40vh;
+  min-height: 220px;
 
   background-size: cover; 
   background-position: center center; 
@@ -154,6 +157,8 @@ export default{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  min-height: 220px;
 }
 .content .slide h2{
     padding: 5px;
@@ -162,6 +167,7 @@ export default{
 .content .slide .description{
   width: 100%;
   height: auto;
+  min-height: 220px;
 
   padding: 10px;
   padding-bottom: 25px;

@@ -31,7 +31,7 @@
         <div @click="openMaps()" class="map"></div>
         <div class="section">
             <h1>Vous n'arrivez toujours pas à nous localiser ?</h1>
-            <p>N'hésitez pas à nous appeler au <span style="color:var( --break-color)">0558602778</span></p>
+            <p>N'hésitez pas à nous appeler au <span style="color:var( --break-color)"><a href="tel:0585602778" style="text-decoration: none;color:var(--break-color)"  class="information-value" >0558602778</a></span></p>
         </div>
        
 
@@ -77,14 +77,14 @@ export default{
 
     width: 100%;
     height: 70vh;
+    min-height: 500px;
 
     display: flex;
 
-    background-color: white
 }
 .holder-location .map{
     width: 100%;
-    height: 40vh;
+    height: 100%;
 
     background-image: url("../../assets/images/Mafal-location-map.png");
     background-size: cover; 

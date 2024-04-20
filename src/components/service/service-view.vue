@@ -80,7 +80,7 @@ export default{
     mounted(){
         const sr3 = ScrollReveal();
         sr3.reveal('.bottom-titel', {
-        duration: 1000,
+        duration:600,
         origin: 'top',
         distance: '150px',
         easing: 'ease-in-out',

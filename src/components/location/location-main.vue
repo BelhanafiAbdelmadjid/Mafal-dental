@@ -1,6 +1,8 @@
 <template>
-    <largeLocation v-if="widthLarge" ></largeLocation>
-    <largeMobile v-else ></largeMobile>
+    <div class="location-main-holder" >
+        <largeLocation v-if="widthLarge" ></largeLocation>
+        <largeMobile v-else ></largeMobile>
+    </div>
 </template>
 <script>
 import largeLocation from "./location-view.vue"
@@ -23,4 +25,7 @@ export default{
 }
 </script>
 <style>
+.location-main-holder{
+    width: 100%;
+}
 </style>

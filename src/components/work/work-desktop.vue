@@ -108,6 +108,10 @@ export default{
 
 <style scoped >
 .work-holder{
+    min-height: 400px;
+
+    cursor: pointer;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -118,6 +122,8 @@ export default{
 .content{
     width: 800px;
     height: 40vh;
+    min-height: 320px;
+
 
     border-radius: 10px; 
     overflow: hidden;
@@ -135,7 +141,7 @@ export default{
     width: 100%;
     bottom: 0;
     left:0;
-    z-index: 999;
+    z-index: 99;
 
     display: flex;
     justify-content: center;
@@ -150,6 +156,8 @@ export default{
 .slider-image{
   width: 100%;
   height: 40vh;
+  min-height: 320px;
+
 
   background-size: cover; 
   background-position: center center; 
@@ -160,10 +168,15 @@ export default{
   display: flex;
   justify-content: center;
   align-items: center;
+
+  min-height: 320px;
+
 }
 .content .slide .description{
   width: 100%;
   height: 40vh;
+  min-height: 320px;
+
 
   padding: 10px;
   box-sizing: border-box;
@@ -181,6 +194,7 @@ export default{
   text-align: center;
   
   height: 100%;
+
 }
 @media only screen and (max-width: 1000px) {
   

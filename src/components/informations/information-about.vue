@@ -12,9 +12,9 @@
 
                 </template>
                 <template #Information>
-                    <p class="information-titel" >Contactez-nous</p>
-                    <p class="information-value" >(05) 58602778</p>
-                    <p class="information-value" >mafal-cilnic@gmail.com</p>
+                    <p  class="information-titel" >Contactez-nous</p>
+                    <a href="tel:0585602778" class="information-value" >(05) 58602778</a>
+                    <a href="mailto:mafal-dental@gmail.com" class="information-value" >mafal-cilnic@gmail.com</a>
                 </template>
             </infoComp>
             <infoComp class="" >
@@ -55,7 +55,7 @@ export default{
     mounted(){
         const sr = ScrollReveal();
         sr.reveal('.titre-info', {
-        duration: 1000,
+        duration: 600,
         origin: 'bottom',
         distance: '150px',
         easing: 'ease-in-out',
@@ -80,6 +80,9 @@ export default{
     font-weight: 500;
     font-size: 20px;
     white-space: nowrap;
+    text-decoration: none;
+    color: var( --break-color);
+    font-weight: 500;
 
 }
 .content .information-value-classic{
